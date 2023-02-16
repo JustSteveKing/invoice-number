@@ -21,8 +21,21 @@
         "hashids/hashids": "^5.0"
     },
     "require-dev": {
+        "laravel/pint": "^1.5",
         "pestphp/pest": "^1.22",
+        "phpstan/phpstan": "^1.9",
         "symfony/var-dumper": "^6.2"
+    },
+    "scripts": {
+        "pint": [
+            "./vendor/bin/pint"
+        ],
+        "stan": [
+            "./vendor/bin/phpstan analyse"
+        ],
+        "test": [
+            "./vendor/bin/pest --coverage"
+        ]
     },
     "prefer-stable": true,
     "minimum-stability": "dev",
