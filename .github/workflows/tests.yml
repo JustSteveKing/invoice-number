@@ -20,7 +20,7 @@ jobs:
           coverage: none
 
       - name: Run composer install
-        run: composer install -n --prefer-dist
+        run: composer install -n
 
       - name: Run tests
         run: ./vendor/bin/pest
