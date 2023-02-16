@@ -1,0 +1,34 @@
+{
+    "name": "juststeveking/invoice-number",
+    "description": "A simple to use PHP Invoice Number Generator",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Steve McDougall",
+            "email": "juststevemcd@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "JustSteveKing\\InvoiceNumber\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "hashids/hashids": "^5.0"
+    },
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require-dev": {
+        "pestphp/pest": "^1.22",
+        "symfony/var-dumper": "^6.2"
+    }
+}
