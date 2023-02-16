@@ -1,4 +1,4 @@
-name: T`ests
+name: Tests
 
 on:
   push:
@@ -31,4 +31,4 @@ jobs:
         run: composer install --no-interaction --prefer-dist
 
       - name: Execute tests
-        run: composer test
+        run: ./vendor/bin/pest
